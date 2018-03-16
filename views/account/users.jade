@@ -1,0 +1,18 @@
+extends ../base
+
+block content
+  .page-header
+    h3 User List
+  p
+  table(class="table table-bordered table-striped")
+    tr
+        th Name
+        th Email
+        th Gender
+        th Website
+    for user in userList
+      tr
+        td= user.profile.name
+        td= user.email
+        td= user.profile.gender
+        td= user.profile.website

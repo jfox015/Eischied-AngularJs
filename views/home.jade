@@ -1,0 +1,36 @@
+extends base
+
+block content
+  h1 Eischied
+  p.lead A MEAN stack demo by Jeff Fox.
+  p 
+    | Based on the  
+    a(href='https://github.com/sahat/hackathon-starter/', target='_blank') Hackathon starter project
+    | .
+  hr
+  .row
+    if !user
+        .col-sm-6
+            h2 Login to Your Account
+            p Login to view your account details and begin using the site.
+            p
+              a.btn.btn-default(href='/login', role='button') Login »
+
+          .col-sm-6
+            h2 Register Now!
+            p Create your own user account now!
+            p
+              a.btn.btn-default(href='/signup', role='button') Register Now »
+    else
+        .col-sm-6
+          h2 User List
+          p See the many fine people who are members of this site
+          p
+            a.btn.btn-default(href='/users', role='button') View Users »
+        .col-sm-6
+            h2 Episode Listing
+            p A RESTful CRUD form for adding, editing and removing episodes from the site.
+            p
+              a.btn.btn-default(href='episodes', role='button') List of episodes »
+    
+    

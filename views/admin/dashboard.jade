@@ -1,0 +1,69 @@
+extends ../base_admin
+
+block content
+    .container
+        .col-sm-12
+          #mainContent.jumboton
+            h1
+              span.glyphicon.glyphicon-wrench.icon-lg
+              |  Admin Dashboard
+            |                 
+            br
+            |                 
+            b You&apos;re logged in as #{user.profile.name || user.email || user.id}.
+            |                 
+            p This is the admin control panel. Manage your site here.
+            |  
+            p
+          |             
+          section.page.container
+            .row
+              .col-sm-6
+                .panel.panel-default
+                  .panel-heading
+                    i.icon-bookmark
+                    |                                 
+                    h5 Shortcuts
+                  |                             
+                  .panel-body.centered
+                    .btn-toolbar
+                      .btn-group
+                        button.btn.btn-primary
+                          i.ion-home
+                          br
+                          | Dashboard
+                        |                                     
+                        button.btn.btn-primary
+                          span.ion-person
+                          br
+                          | User List
+                        |                                     
+                        button.btn.btn-primary
+                          i.ion-search
+                          br
+                          | Search
+                        |                                     
+                        button.btn.btn-primary
+                          i.ion-android-list
+                          br
+                          | Reports
+                        |                                     
+                        button.btn.btn-primary
+                          i.ion-stats-bars
+                          br
+                          | Charts
+                        button.btn.btn-primary
+                          i.ion-hammer
+                          br
+                          | Tools
+              |                     
+              .col-sm-6
+                .panel.panel-default
+                  .panel-heading
+                    h5 Welcome
+                  |                             
+                  .panel-body
+                    p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                      | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      | exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

@@ -1,0 +1,32 @@
+extends ../base
+
+block content
+  .page-header
+    h3 Sign up
+  .well
+    | Do you have an activation code to enter?
+    a(href='/activate') Activate your account
+    | now!
+  form.form-horizontal(id='signup-form', method='POST')
+    input(type='hidden', name='_csrf', value=_csrf)
+    .form-group
+      label.col-sm-3.control-label(for='email') Email
+      .col-sm-7
+        input.form-control(type='email', name='email', id='email', placeholder='Email', autofocus)
+    .form-group
+      label.col-sm-3.control-label(for='password') Password
+      .col-sm-7
+        input.form-control(type='password', name='password', id='password', placeholder='Password')
+    .form-group
+      label.col-sm-3.control-label(for='confirmPassword') Confirm Password
+      .col-sm-7
+        input.form-control(type='password', name='confirmPassword', id='confirmPassword', placeholder='Confirm Password')
+    .form-group
+      label.col-sm-3.control-label(for='name') Name (Optional)
+      .col-sm-7
+        input.form-control(type='text', name='name', id='name', placeholder='Enter Name')
+    .form-group
+      .col-sm-offset-3.col-sm-7
+        button.btn.btn-success(type='submit')
+          span.ion-person-add
+          | Signup

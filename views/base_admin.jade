@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title #{title} - Eischied Admin Area
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0') 
+    link(rel='shortcut icon', href='faveicon.png') 
+    != css('admin')
+  body
+    include admin/partials/nav
+    .container
+        include partials/flash
+        block content
+        p
+    include partials/footer
+    != js('application')
+        
