@@ -12,6 +12,10 @@ Back and forth communication from the UI to the backend is accomplished via a RE
 
 This project is based off the excellent Hackathon Starter Project (https://github.com/sahat/hackathon-starter).
 
+## NOTE
+
+many of the technologies used in this demo are now deprecated or have been supercedded by newer versions. This demo features Angular 1.x which is now closing in on end of life for support. Jade Templates have also been renamed to pug. So there may be depercation warnings and messages during NPM Install. This project is provided "as-is" as a Angular 1.x demo.
+
 ## Set up and run the project
 
 ```sh
