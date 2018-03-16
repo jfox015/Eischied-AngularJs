@@ -65,9 +65,14 @@ var app = express();
 /**
  * Connect to MongoDB.
  */
-mongoose.connect(secrets.db);
-mongoose.connection.on('error', function() {
-  console.error('MongoDB Connection Error. Please make sure that MongoDB is running.');
+mongoose.Promise = global.Promise;
+mongoose.connect(secrets.db || secrets.db);
+mongoose.connection.on('connected', () => {
+  console.log('%s MongoDB connection established!', chalk.green('✓'));
+});
+mongoose.connection.on('error', () => {
+  console.log('%s MongoDB connection error. Please make sure MongoDB is running.', chalk.red('✗'));
+  process.exit();
 });
 
 /**

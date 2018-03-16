@@ -14,15 +14,45 @@ This project is based off the excellent Hackathon Starter Project (https://githu
 
 ## NOTE
 
-many of the technologies used in this demo are now deprecated or have been supercedded by newer versions. This demo features Angular 1.x which is now closing in on end of life for support. Jade Templates have also been renamed to pug. So there may be depercation warnings and messages during NPM Install. This project is provided "as-is" as a Angular 1.x demo.
+Many of the technologies used in this demo are now deprecated or have been supercedded by newer versions. This demo features Angular 1.x which is now closing in on end of life for support. Jade Templates have also been renamed to pug. So there may be depercation warnings and messages during NPM Install. This project is provided "as-is" as a Angular 1.x demo.
 
-## Set up and run the project
+## Requirements
+
+- NodeJs
+- MongoDB 2.x
+
+
+## Set up the project
 
 ```sh
 $ git clone git://github.com/jfox015/Eischied-AngularJs
 $ cd Eischied-AngularJs
 $ npm install
-$ npm start
+```
+
+## Launch MongoDB
+
+Make sure your local copy of MongoDB is running. The run the following command to start the site.
+
+```sh
+$ $ npm start
 ```
 
 Browse to http://localhost:3000 to run.
+
+## Error Note
+
+If you received the following error:
+
+```sh
+$ Error: Cannot find module 'mongodb/node_modules/bson
+```
+
+Do the following:
+
+```sh
+npm install -g node-gyp 
+cd /to/your/project-folder
+rm -rf node_modules
+npm install
+```
