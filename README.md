@@ -1,12 +1,12 @@
 # Project Eischied
 
-A boilerplate MEAN Stack demo for a web based, multi API application. Named after the 70's TV Shot Eisshied starting Joe Don Baker.
+A boilerplate MEAN Stack demo for a web based, multi-API application. Named after the 70's TV Show "Eischeid" staring Joe Don Baker.
 
 This library has two main components, the backend pages/API and public HTML.
 
 The example API included is written in NodeJS using Express 4.x+ with Jade Templating.
 
-The front end is an AngularJS based application UI using JQuery, Bootstrap and LESS CSS.
+The front end is an AngularJS 1.x based application UI using JQuery, Bootstrap and LESS CSS.
 
 Back and forth communication from the UI to the backend is accomplished via a RESTful services API.
 
@@ -21,4 +21,4 @@ $ npm install
 $ npm start
 ```
 
-Brows to http://localhost:3000 to run.
+Browse to http://localhost:3000 to run.
