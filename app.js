@@ -37,6 +37,7 @@ var flash = require('express-flash');
 var session = require('express-session');
 var expressValidator = require('express-validator');
 
+var chalk = require('chalk');
 var bodyParser = require('body-parser');
 var compression = require('compression');
 var connectAssets = require('connect-assets');
