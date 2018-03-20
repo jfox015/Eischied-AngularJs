@@ -1,5 +1,5 @@
 /**
- *  Eischied
+ *  Eischied (Legacy)
  *  
  *  An open source web app start kit using a MEAN stack and Jade Templating forked 
  *  from the excellent Hackathon Starter Project (https://github.com/sahat/hackathon-starter)

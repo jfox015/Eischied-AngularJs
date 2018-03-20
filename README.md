@@ -1,6 +1,14 @@
-# Project Eischied
+# Project Eischied (Legacy)
 
 A boilerplate MEAN Stack demo for a web based, multi-API application. Named after the 70's TV Show "Eischeid" staring Joe Don Baker.
+
+## NOTE
+
+Many of the technologies used in this demo are now deprecated or have been supercedded by newer versions. This demo features Angular 1.x which is now closing in on end of life for support. Jade Templates have also been renamed to Pug since this demo was put together. So there may be depercation warnings and messages during NPM Install. This project is provided "as-is" as a legacy demo of using Angular 1.x.
+
+For a more current version of this demo, see [github.com/jfox015/Eischied-Angular](https://github.com/jfox015/Eischied-Angular).
+
+## Overview
 
 This library has two main components, the backend pages/API and public HTML.
 
@@ -12,14 +20,11 @@ Back and forth communication from the UI to the backend is accomplished via a RE
 
 This project is based off the excellent Hackathon Starter Project (https://github.com/sahat/hackathon-starter).
 
-## NOTE
-
-Many of the technologies used in this demo are now deprecated or have been supercedded by newer versions. This demo features Angular 1.x which is now closing in on end of life for support. Jade Templates have also been renamed to pug. So there may be depercation warnings and messages during NPM Install. This project is provided "as-is" as a Angular 1.x demo.
 
 ## Requirements
 
-- NodeJs
-- MongoDB 2.x
+- NodeJs 8.x+
+- MongoDB 2.x+
 
 
 ## Set up the project
